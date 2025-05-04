@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Pozvánka – Technológie a Krása</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #4e342e 12%, #fff8f0 12%, #fff8f0 88%, #4e342e 88%);
+      font-family: 'Raleway', sans-serif;
+      color: #3e2723;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 4rem auto;
+      background: #fdf6f0;
+      border: 10px double goldenrod;
+      padding: 3rem;
+      border-radius: 30px;
+      box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: goldenrod;
+      text-shadow: 0 0 15px #ffecb3;
+      animation: shine 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes shine {
+      0%   { text-shadow: 0 0 5px #ffecb3; }
+      100% { text-shadow: 0 0 20px #ffd700; }
+    }
+
+    .subtitle {
+      font-size: 1.8rem;
+      color: #6d4c41;
+      margin: 1rem 0 2rem;
+      animation: fadeInUp 2s ease-in;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .gold-bar {
+      height: 4px;
+      background: linear-gradient(to right, #bfa26f, #fff8dc, #bfa26f);
+      margin: 1.5rem auto;
+      width: 80%;
+      border-radius: 5px;
+    }
+
+    .banner-text {
+      font-size: 1.4rem;
+      color: #5d4037;
+      animation: floatText 4s ease-in-out infinite;
+    }
+
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .sparkle {
+      font-size: 1.1rem;
+      color: goldenrod;
+      animation: sparkle 2.5s infinite ease-in-out;
+    }
+
+    @keyframes sparkle {
+      0%   { opacity: 0.2; letter-spacing: 1px; }
+      50%  { opacity: 1; letter-spacing: 3px; }
+      100% { opacity: 0.2; letter-spacing: 1px; }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      margin: 2rem 0;
+      animation: zoom 2s ease;
+    }
+
+    @keyframes zoom {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .info {
+      background: #fffaf2;
+      border: 2px dashed goldenrod;
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: left;
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      animation: fadeIn 3s ease-in;
+    }
+
+    .info p {
+      margin: 0.8rem 0;
+    }
+
+    .info strong {
+      color: #4e342e;
+    }
+
+    a {
+      color: #5d4037;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 2.5rem;
+      font-style: italic;
+      color: #6d4c41;
+      animation: fadeIn 4s ease-in;
+    }
+
+    .ribbon {
+      position: absolute;
+      top: 0;
+      right: -60px;
+      transform: rotate(45deg);
+      background: goldenrod;
+      color: white;
+      padding: 0.5rem 5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ribbon">VIP POZVANIE</div>
+
+    <h1>Prezentácia projektu</h1>
+    <div class="subtitle">Technológie & Ideál krásy</div>
+
+    <div class="gold-bar"></div>
+    <div class="banner-text">🎭 Realita verzus filtrovaný svet sociálnych sietí 🎭</div>
+    <div class="sparkle">✨ Objav, čo sa skrýva za dokonalosťou ✨</div>
+    <div class="gold-bar"></div>
+
+    <img src="motivacny-obrazok.jpg" alt="Realita vs Sociálne siete">
+
+    <div class="info">
+      <p><strong>Dátum:</strong> 26. jún 2026</p>
+      <p><strong>Čas:</strong> 14:00</p>
+      <p><strong>Miesto:</strong> Učebňa č. 19, Gymnázium KNM</p>
+      <p><strong>Kontakt:</strong> <a href="mailto:technologie.vplyv@gmail.com">technologie.vplyv@gmail.com</a></p>
+      <p><strong>Popis:</strong> Ponor sa do vizuálnej premeny sveta krásy pod vplyvom technológií a sociálnych médií. Očakávaj estetiku, úprimnosť aj prekvapenie.</p>
+    </div>
+
+    <div class="footer">
+      Teším sa na tvoju účasť. Krása začína pochopením pravdy 🌟
+    </div>
+  </div>
+</body>
+</html>
